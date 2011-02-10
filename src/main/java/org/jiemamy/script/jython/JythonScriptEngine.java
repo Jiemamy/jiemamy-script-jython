@@ -21,11 +21,11 @@ package org.jiemamy.script.jython;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.apache.commons.lang.Validate;
 import org.python.core.PyObject;
 import org.python.util.PythonInterpreter;
 
 import org.jiemamy.script.ScriptEngine;
+import org.jiemamy.script.ScriptException;
 
 /**
  * {@link ScriptEngine}のJython実装クラス。
@@ -36,16 +36,19 @@ import org.jiemamy.script.ScriptEngine;
  */
 public class JythonScriptEngine implements ScriptEngine {
 	
-	public String process(Map<String, Object> env, String script) {
-		Validate.notNull(script);
-		PythonInterpreter pythonInterpreter = new PythonInterpreter();
-		if (env != null) {
-			for (Entry<String, Object> entry : env.entrySet()) {
-				pythonInterpreter.set(entry.getKey(), entry.getValue());
+	public String process(Map<String, Object> env, String script) throws ScriptException {
+		try {
+			PythonInterpreter pythonInterpreter = new PythonInterpreter();
+			if (env != null) {
+				for (Entry<String, Object> entry : env.entrySet()) {
+					pythonInterpreter.set(entry.getKey(), entry.getValue());
+				}
 			}
+			PyObject result = pythonInterpreter.eval(script);
+			return result == null ? null : result.toString();
+		} catch (Exception e) {
+			throw new ScriptException(e);
 		}
-		PyObject result = pythonInterpreter.eval(script);
-		return result == null ? null : result.toString();
 	}
 	
 }
