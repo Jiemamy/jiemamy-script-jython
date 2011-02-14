@@ -104,7 +104,7 @@
     <dependency>
       <groupId>org.jiemamy</groupId>
       <artifactId>jiemamy-core</artifactId>
-      <version>${project.version}</version>
+      <version>0.3.0</version>
     </dependency>
   </dependencies>
   <repositories>
