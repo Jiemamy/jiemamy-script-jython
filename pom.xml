@@ -9,7 +9,7 @@
   <groupId>org.jiemamy</groupId>
   <artifactId>jiemamy-script-jython</artifactId>
   <name>Jiemamy Jython script engine implementation</name>
-  <version>0.3.0</version>
+  <version>0.3.1-SNAPSHOT</version>
   <description><![CDATA[JiemamyにおけるJythonスクリプトエンジン提供するコンポーネント]]></description>
   <issueManagement>
     <system>JIRA</system>
@@ -38,9 +38,9 @@
     </developer>
   </developers>
   <scm>
-    <connection>scm:svn:http://svn.jiemamy.org/products/proteus/jiemamy-script-jython/tags/jiemamy-script-jython-0.3.0</connection>
-    <developerConnection>scm:svn:http://svn.jiemamy.org/products/proteus/jiemamy-script-jython/tags/jiemamy-script-jython-0.3.0</developerConnection>
-    <url>http://fisheye.jiemamy.org/browse/proteus/jiemamy-script-jython/tags/jiemamy-script-jython-0.3.0</url>
+    <connection>scm:svn:http://svn.jiemamy.org/products/proteus/jiemamy-script-jython/trunk</connection>
+    <developerConnection>scm:svn:http://svn.jiemamy.org/products/proteus/jiemamy-script-jython/trunk</developerConnection>
+    <url>http://fisheye.jiemamy.org/browse/proteus/jiemamy-script-jython/trunk</url>
   </scm>
   <build>
     <plugins>
