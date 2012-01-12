@@ -6,7 +6,6 @@
     <artifactId>jiemamy-master</artifactId>
     <version>1.7.1</version>
   </parent>
-  <groupId>org.jiemamy</groupId>
   <artifactId>jiemamy-script-jython</artifactId>
   <name>Jiemamy Jython script engine implementation</name>
   <version>0.3.1-SNAPSHOT</version>

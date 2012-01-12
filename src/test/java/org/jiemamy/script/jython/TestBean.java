@@ -30,7 +30,7 @@ public class TestBean {
 	
 	private int bar;
 	
-
+	
 	/**
 	 * インスタンスを生成する。
 	 * 

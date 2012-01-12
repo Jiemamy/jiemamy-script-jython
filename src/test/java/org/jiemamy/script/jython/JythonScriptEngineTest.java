@@ -43,7 +43,7 @@ public class JythonScriptEngineTest {
 	
 	private JythonScriptEngine engine;
 	
-
+	
 	/**
 	 * テストを初期化する。
 	 * 
