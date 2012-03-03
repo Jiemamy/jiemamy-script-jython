@@ -4,11 +4,11 @@
   <parent>
     <groupId>org.jiemamy</groupId>
     <artifactId>jiemamy-master</artifactId>
-    <version>1.7.3</version>
+    <version>2.0.0</version>
   </parent>
   <artifactId>jiemamy-script-jython</artifactId>
   <name>Jiemamy Jython script engine implementation</name>
-  <version>0.3.1-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <description><![CDATA[JiemamyにおけるJythonスクリプトエンジン提供するコンポーネント]]></description>
   <issueManagement>
     <system>JIRA</system>
@@ -107,7 +107,7 @@
     <dependency>
       <groupId>org.jiemamy</groupId>
       <artifactId>jiemamy-core</artifactId>
-      <version>0.3.0</version>
+      <version>1.0.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
   <repositories>
